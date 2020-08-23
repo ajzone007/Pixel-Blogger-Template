@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
-<html b:version='2' class='v2' expr:dir='data:blog.languageDirection'
-  xmlns='http://www.w3.org/1999/xhtml'
-  xmlns:b='http://www.google.com/2005/gml/b'
-  xmlns:data='http://www.google.com/2005/gml/data'
-  xmlns:expr='http://www.google.com/2005/gml/expr'>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
   <head>
-
     <b:if cond='data:blog.url == data:blog.homepageUrl'>
       <title>
         <data:blog.title/>
@@ -14,8 +9,7 @@
     </b:if>
     <b:if cond='data:blog.pageType == &quot;item&quot;'>
       <title>
-        <data:blog.pageName/>
- -        <data:blog.title/>
+        <data:blog.pageName/>-<data:blog.title/>
       </title>
     </b:if>
     <b:if cond='data:blog.pageType == &quot;archive&quot;'>
@@ -48,11 +42,11 @@
 
 
     <!--META-->
+
     <meta charset='utf-8'/>
     <meta content='width' name='MobileOptimized'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='yes' name='apple-mobile-web-app-capable'/>
-    <meta content='index,nofollow' name='robots'/>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
     <link expr:href='data:blog.canonicalUrl' rel='canonical'/>
     <link expr:href='data:blog.homepageUrl + &quot;favicon.ico&quot;' rel='icon' type='image/x-icon'/>
@@ -70,46 +64,6 @@
         <link expr:href='data:blog.postImageThumbnailUrl' rel='image_src'/>
       </b:if>
     </b:if>
-    <meta charset='UTF-8'/>
-    <meta content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1' name='viewport'/>
-    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'/>
-    <meta content='blogger' name='generator'/>
-    <meta content='indonesian' name='language'/>
-    <meta content='id' name='geo.country'/>
-    <meta content='indonesia' name='geo.placename'/>
-    <meta content='Author' name='author'/>
-    <meta content='index,follow' name='robots'/>
-    <meta content='2 days' name='revisit-after'/>
-    <meta content='2 days' name='revisit'/>
-    <meta content='never' name='expires'/>
-    <meta content='always' name='revisit'/>
-    <meta content='global' name='distribution'/>
-    <meta content='general' name='rating'/>
-    <meta content='true' name='MSSmartTagsPreventParsing'/>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-    <meta content='index, follow' name='googlebot'/>
-    <meta content='follow, all' name='Googlebot-Image'/>
-    <meta content='follow, all' name='msnbot'/>
-    <meta content='follow, all' name='Slurp'/>
-    <meta content='follow, all' name='ZyBorg'/>
-    <meta content='follow, all' name='Scooter'/>
-    <meta content='all' name='spiders'/>
-    <meta content='all' name='WEBCRAWLERS'/>
-    <meta content='aeiwi, alexa, alltheWeb, altavista, aol netfind, anzwers, canada, directhit, euroseek, excite, overture, go, google, hotbot. infomak, kanoodle, lycos, mastersite, national directory, northern light, searchit, simplesearch, Websmostlinked, webtop, what-u-seek, aol, yahoo, webcrawler, infoseek, excite, magellan, looksmart, bing, cnet, googlebot' name='search engines'/>
-    <meta content="" property="fb:app_id" />
-    <b:if cond='data:blog.pageType == &quot;item&quot;'>
-      <meta content='article' property='og:type'/>
-      <meta expr:content='data:blog.title' property='og:site_name'/>
-      <meta expr:content='data:blog.pageName' property='og:title'/>
-      <b:if cond='data:blog.postImageThumbnailUrl'>
-        <meta expr:content='data:blog.postImageThumbnailUrl' property='og:image'/>
-      </b:if>
-      <b:else/>
-      <meta expr:content='data:blog.title' property='og:title'/>
-      <meta content='website' property='og:type'/>
-    </b:if>
-    <meta expr:content='&quot;en_US&quot;' property='og:locale'/>
-    <meta expr:content='data:blog.canonicalUrl' property='og:url'/>
     <!-- Blogger main head data and meta -->
     <b:include data='blog' name='all-head-content'/>
 
@@ -187,7 +141,7 @@ article{padding:0;overflow:hidden}
 .pixel-social{float:right;padding:5px 0}
 .pixel-social li{display:inline;padding:0;float:left;margin-right:5px}
 .pixel-social .widget ul{padding:0}
-.pixel-social .LinkList ul{text-align:center;margin:0 20px 0 0}
+.pixel-social .LinkList ul{text-align:center;margin:auto;}
 .pixel-social #social a{display:block;width:30px;height:30px;line-height:30px;font-size:14px;color:#fff;transition:background .3s linear;-moz-transition:background .3s linear;-webkit-transition:background .3s linear;-o-transition:background .3s linear}
 .pixel-social #social a:before{display:inline-block;font:normal normal normal 22px/1 FontAwesome;font-size:inherit;font-style:normal;font-weight:400;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .pixel-social .bloglovin:before{content:"\f004"}
@@ -980,16 +934,15 @@ margin: 0 auto;
 padding: 20px 0px;
 }
 
-]]>    </b:skin>
+    ]]></b:skin>
     <b:template-skin>
       <![CDATA[
-body#layout .adminbar{display: block !important;width:280px;float:left;height:100%;position:absolute;top:0px;bottom:0px;left:0px;background: #5d4286;padding-top: 100px;}
+body#layout .adminbar{display: block !important;width:280px;float:left;height:100%;position:absolute;top:0px;bottom:0px;left:0px;background: #158808;padding-top: 100px;}
 body#layout .userinput > div{display: block;height: auto !important;visibility: visible !important;}
 body#layout .pixel-top, body#layout .pixel-center-header, body#layout .pixel-navigation, body#layout .pixel-wrapper,body#layout #ads-blog, body#layout #content-wrapper,body#layout #pixel-footer{display: block;box-sizing: border-box;padding-left: 300px;}
 body#layout{background: #fff;min-width:950px;}
 body#layout .adminbar .section{background: transparent !important;border: 0px !important;color: #fff;}
 body#layout .adminbar .section > h4{font-size:14px;margin-left: 0px;}
-body#layout .adminbar:before{content:  url("https://4.bp.blogspot.com/-w_OcVSzp_cM/WgxYE78QWHI/AAAAAAAABBY/GmK-TwZj1bM7KPAIaCLj-l4Tr7WhJOxkgCLcBGAs/s1600/clg.png");}
 body#layout .pixel-sidebar-tab{display: none}
 body#layout .pixel-navigation .widget{visibility: visible !important;display: block !important;height: auto !important;clear: both;}
 body#layout #pixel-menu{display: table;width: 100%;box-sizing: border-box;margin-left: 0px;}
@@ -1022,7 +975,7 @@ body#layout #option h4{width: 100%;}
       <style>.hidehome{display:none}</style>
     </b:if>
     <b:include data='blog' name='google-analytics'/>
-    <script async='async' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
     <script async='async' type='text/javascript'>
 //                  <![CDATA[
 //CSS Ready
@@ -1385,7 +1338,7 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
     <b:section class='ad-home-widget' id='pixel-advert-1' maxwidgets='1' name='Home Advertisement [Full Width]' preferred='no' showaddelement='no'>
       <b:widget id='HTML994' locked='false' title='Full width home advertisement' type='HTML' version='1'>
         <b:widget-settings>
-          <b:widget-setting name='content'><![CDATA[<a href="http://www.blossomtheme.com" target="_blank"><img style="width:100%;" src="https://2.bp.blogspot.com/-MYa_e2xc3_Y/WgV3kYHsmGI/AAAAAAAAA-M/FWZXZ8oHizg1emaYhz1owih_0gIM2UvcQCLcBGAs/s1600/728%2B3.png"/></a>]]></b:widget-setting>
+          <b:widget-setting name='content'/>
         </b:widget-settings>
         <b:includable id='main'>
           <!-- only display title if it's non-empty -->
@@ -1417,7 +1370,7 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
   .error_page .padders form{display:block;max-width:800px;}
   .error_page .padders form .input-group{padding-right:30px;}
   .error_page .padders p{padding:20px 0px;}
-  .error_page .padders form .input-group input{background:#fff;width:100%;height:50px;font-family:&quot;Josefin Sans&quot;;font-size:15px;border:1px solid #E5E6E1;padding:6px 12px;box-sizing:border-box;}
+  .error_page .padders form .input-group input{background:#fff;width:100%;height:50px;font-family:&quot; Josefin Sans &quot;;font-size:15px;border:1px solid #E5E6E1;padding:6px 12px;box-sizing:border-box;}
   .error_page .padders form .input-group .input-group-btn{position:relative;font-size:0;white-space:nowrap;}
   .error_page .padders button{height:50px;color:#fff;border:none;position:absolute;border-radius:0;left:0px;border-top-left-radius:0px;border-bottom-left-radius:0px;float:left;font-size:20px;padding:12px 30px 10px;}
   @media only screen and (max-width:880px){
@@ -2209,11 +2162,6 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
                                 <i class='fa fa-twitter'/>
                               </a>
                             </li>
-                            <li class='social-item google'>
-                              <a class='googleplus' expr:href='&quot;https://plus.google.com/share?url=&quot;+ data:post.url' onclick='javascript:window.open(this.href,&apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&apos;);return false;' title='google +'>
-                                <i class='fa fa-google-plus'/>
-                              </a>
-                            </li>
                           </ul>
                         </div>
                       </div>
@@ -2279,11 +2227,6 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
                           <li class='social-item twitter'>
                             <a class='product_share_twitter twitter' expr:href='&quot;https://twitter.com/share?url=&quot;+ data:post.url' onclick='javascript:window.open(this.href,&apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600&apos;);return false;' title='twitter'>
                               <i class='fa fa-twitter'/>
-                            </a>
-                          </li>
-                          <li class='social-item google'>
-                            <a class='googleplus' expr:href='&quot;https://plus.google.com/share?url=&quot;+ data:post.url' onclick='javascript:window.open(this.href,&apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&apos;);return false;' title='google +'>
-                              <i class='fa fa-google-plus'/>
                             </a>
                           </li>
                         </ul>
@@ -2431,12 +2374,6 @@ $('.pixel-navigation').after($('#hpick').html());
                         </i> twitter                        
                       </a>
                     </li>
-                    <li class='social-item google'>
-                      <a class='googleplus' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' onclick='javascript:window.open(this.href,&apos;&apos;, &apos;menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600&apos;);return false;' title='google +'>
-                        <i class='fa fa-google-plus'>
-                        </i> google+                        
-                      </a>
-                    </li>
                   </ul>
                 </div>
               </div>
@@ -2472,7 +2409,7 @@ $('.pixel-navigation').after($('#hpick').html());
 
         </b:if>
       </b:includable>
-      <b:includable id='postQuickEdit' var='post'>
+          <b:includable id='postQuickEdit' var='post'>
         <b:if cond='data:post.editUrl'>
           <span expr:class='&quot;item-control &quot; + data:post.adminClass'>
             <a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'>
@@ -2481,7 +2418,7 @@ $('.pixel-navigation').after($('#hpick').html());
           </span>
         </b:if>
       </b:includable>
-      <b:includable id='shareButtons' var='post'>
+          <b:includable id='shareButtons' var='post'>
         <b:if cond='data:top.showEmailButton'>
           <a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' expr:title='data:top.emailThisMsg' target='_blank'>
             <span class='share-button-link-text'>
@@ -2523,7 +2460,7 @@ $('.pixel-navigation').after($('#hpick').html());
           </div>
         </b:if>
       </b:includable>
-      <b:includable id='status-message'>
+          <b:includable id='status-message'>
         <b:if cond='data:navMessage'>
           <b:if cond='data:blog.pageType != &quot;error_page&quot;'>
             <b:if cond='data:blog.url != data:blog.homepageUrl'>
@@ -2545,7 +2482,7 @@ $('.pixel-navigation').after(codei);
           </b:if>
         </b:if>
       </b:includable>
-      <b:includable id='threaded-comment-form' var='post'>
+          <b:includable id='threaded-comment-form' var='post'>
         <div class='comment-form'>
           <a name='comment-form'/>
           <b:if cond='data:mobile'>
@@ -2570,7 +2507,7 @@ $('.pixel-navigation').after(codei);
           </script>
         </div>
       </b:includable>
-      <b:includable id='threaded_comment_js' var='post'>
+          <b:includable id='threaded_comment_js' var='post'>
         <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/>
 
         <script type='text/javascript'>
@@ -2755,7 +2692,7 @@ $('.pixel-navigation').after(codei);
 // ]]>
     </script>
   </b:includable>
-  <b:includable id='threaded_comments' var='post'>
+          <b:includable id='threaded_comments' var='post'>
     <div class='comments' id='comments'>
       <a name='comments'/>
       <h4>
@@ -2791,12 +2728,12 @@ $('.pixel-navigation').after(codei);
       </div>
     </div>
   </b:includable>
-</b:widget>
-<b:widget id='HTML990' locked='true' title='Comments System' type='HTML' version='1'>
-  <b:widget-settings>
-    <b:widget-setting name='content'>[blogger][disqus][facebook]</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
+        </b:widget>
+        <b:widget id='HTML990' locked='true' title='Comments System' type='HTML' version='1'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>[blogger][facebook]</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
 
     <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
 
@@ -2816,7 +2753,7 @@ $('.pixel-navigation').after(codei);
             </div>
           </div>
           <script type='text/javascript'>
-              //                                    <![CDATA[
+              //<![CDATA[
                 $('#comments').remove();
               //]]>
           </script>
@@ -3004,21 +2941,20 @@ $('.pixel-navigation').after(codei);
           </div>
         </b:if>
         <div id='fb-root'/>
-        <script>(function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0&quot;;fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</script>&lt;script&gt;$(&quot;.facebook-tab&quot;).append(&quot;&lt;div class=&#39;fb-comments&#39; data-href=&#39;<data:blog.canonicalUrl/>
-&#39; data-width=&#39;100%&#39; data-numposts=&#39;5&#39; data-colorscheme=&#39;light&#39;&gt;&lt;/div&gt;&quot;);&lt;/script&gt;
+        <script>
+          (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.0&quot;;fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));</script>&lt;script&gt;$(&quot;.facebook-tab&quot;).append(&quot;&lt;div class=&#39;fb-comments&#39; data-href=&#39;<data:blog.canonicalUrl/>&#39; data-width=&#39;100%&#39; data-numposts=&#39;5&#39; data-colorscheme=&#39;light&#39;&gt;&lt;/div&gt;&quot;);&lt;/script&gt;
       </div>
     </b:if>
   </b:includable>
-</b:widget>
-<b:widget id='HTML989' locked='true' title='Disqus Shortname' type='HTML' version='1'>
-  <b:widget-settings>
-    <b:widget-setting name='content'>theme-daddy</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
+        </b:widget>
+        <b:widget id='HTML989' locked='true' title='Disqus Shortname' type='HTML' version='1'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>theme-daddy</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
     <b:if cond='data:blog.pageType in {&quot;item&quot;,&quot;static_page&quot;}'>
             &lt;script type=&#39;text/javascript&#39;&gt;
-            var disqus_shortname = &#39;<data:content/>
-&#39;;
+            var disqus_shortname = &#39;<data:content/>&#39;;
              (function() {
               var dsq = document.createElement(&#39;script&#39;); dsq.type = &#39;text/javascript&#39;; dsq.async = true;
               dsq.src = &#39;//&#39; + disqus_shortname + &#39;.disqus.com/embed.js&#39;;
@@ -3027,13 +2963,13 @@ $('.pixel-navigation').after(codei);
             &lt;/script&gt;
     </b:if>
   </b:includable>
-</b:widget>
-</b:section>
+        </b:widget>
+      </b:section>
 <div id='ads-blog'>
 <b:section class='ad-bottom-widget' id='pixel-advert-3' maxwidgets='1' name='Bottom Ad [Post Page]' preferred='no' showaddelement='no'>
   <b:widget id='HTML988' locked='true' title='Bottom Ad [Post Page]' type='HTML' version='1'>
     <b:widget-settings>
-      <b:widget-setting name='content'><![CDATA[<a href="http://www.blossomtheme.com" target="_blank"><img style="width:100%;" src="https://2.bp.blogspot.com/-MYa_e2xc3_Y/WgV3kYHsmGI/AAAAAAAAA-M/FWZXZ8oHizg1emaYhz1owih_0gIM2UvcQCLcBGAs/s1600/728%2B3.png"/></a>]]></b:widget-setting>
+      <b:widget-setting name='content'/>
     </b:widget-settings>
     <b:includable id='main'>
       <!-- only display title if it's non-empty -->
@@ -3058,22 +2994,22 @@ $('.pixel-navigation').after(codei);
 </div>
 <div id='sidebar-wrapper'>
 <b:section class='sidebar pixel-widetize' id='sidebar(1)' name='SIDEBAR TOP' preferred='yes'>
-<b:widget id='Attribution1' locked='false' title='' type='Attribution'>
-  <b:widget-settings>
-    <b:widget-setting name='copyright'/>
-  </b:widget-settings>
-  <b:includable id='main'>
+  <b:widget id='Attribution1' locked='false' title='' type='Attribution' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='copyright'/>
+    </b:widget-settings>
+    <b:includable id='main'>
     <div class='widget-content' style='text-align: center;'>
       <b:if cond='data:attribution != &quot;&quot;'>
-        <data:attribution/>
+       <data:attribution/>
       </b:if>
     </div>
 
     <b:include name='quickedit'/>
   </b:includable>
-</b:widget>
-<b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
-  <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
+  </b:widget>
+  <b:widget id='Navbar1' locked='false' title='Navbar' type='Navbar' version='1'>
+    <b:includable id='main'>&lt;script type=&quot;text/javascript&quot;&gt;
     function setAttributeOnload(object, attribute, val) {
       if(window.addEventListener) {
         window.addEventListener(&#39;load&#39;,
@@ -3105,8 +3041,8 @@ if (head) {
 head.appendChild(script);
 }})();
 &lt;/script&gt;
-  </b:includable>
-</b:widget>
+</b:includable>
+  </b:widget>
 </b:section>
 <div style='clear: both;'/>
 <div class='pixel-sidebar-tabs' id='pixel-sidebar-tabs'>
@@ -3230,19 +3166,19 @@ head.appendChild(script);
 </div>
 <div style='clear: both;'/>
 <b:section class='sidebar pixel-widetize' id='sidebar(2)' name='SIDEBAR BOTTOM' preferred='yes'>
-<b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' version='1'>
-  <b:widget-settings>
-    <b:widget-setting name='showStyle'>MENU</b:widget-setting>
-    <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
-    <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
-    <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
-    <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
-    <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
-    <b:widget-setting name='chronological'>false</b:widget-setting>
-    <b:widget-setting name='showPosts'>false</b:widget-setting>
-    <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
+  <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showStyle'>MENU</b:widget-setting>
+      <b:widget-setting name='yearPattern'>yyyy</b:widget-setting>
+      <b:widget-setting name='showWeekEnd'>true</b:widget-setting>
+      <b:widget-setting name='monthPattern'>MMMM yyyy</b:widget-setting>
+      <b:widget-setting name='dayPattern'>MMM dd</b:widget-setting>
+      <b:widget-setting name='weekPattern'>MM/dd</b:widget-setting>
+      <b:widget-setting name='chronological'>false</b:widget-setting>
+      <b:widget-setting name='showPosts'>false</b:widget-setting>
+      <b:widget-setting name='frequency'>MONTHLY</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
     <b:if cond='data:title != &quot;&quot;'>
       <h2>
         <data:title/>
@@ -3259,7 +3195,7 @@ head.appendChild(script);
       <!--b:include name='quickedit'/-->
     </div>
   </b:includable>
-  <b:includable id='flat' var='data'>
+    <b:includable id='flat' var='data'>
     <ul class='flat'>
       <b:loop values='data:data' var='i'>
         <li class='archivedate'>
@@ -3271,7 +3207,7 @@ head.appendChild(script);
       </b:loop>
     </ul>
   </b:includable>
-  <b:includable id='interval' var='intervalData'>
+    <b:includable id='interval' var='intervalData'>
     <b:loop values='data:intervalData' var='interval'>
       <ul class='hierarchy'>
         <li expr:class='&quot;archivedate &quot; + data:interval.expclass'>
@@ -3287,7 +3223,7 @@ head.appendChild(script);
       </ul>
     </b:loop>
   </b:includable>
-  <b:includable id='menu' var='data'>
+    <b:includable id='menu' var='data'>
     <select expr:id='data:widget.instanceId + &quot;_ArchiveMenu&quot;'>
       <option value=''>
         <data:title/>
@@ -3300,7 +3236,7 @@ head.appendChild(script);
       </b:loop>
     </select>
   </b:includable>
-  <b:includable id='posts' var='posts'>
+    <b:includable id='posts' var='posts'>
     <ul class='posts'>
       <b:loop values='data:posts' var='post'>
         <li>
@@ -3311,7 +3247,7 @@ head.appendChild(script);
       </b:loop>
     </ul>
   </b:includable>
-  <b:includable id='toggle' var='interval'>
+    <b:includable id='toggle' var='interval'>
     <a class='toggle' href='javascript:void(0)'>
       <span expr:class='&quot;zippy&quot; + (data:interval.expclass == &quot;expanded&quot; ? &quot; toggle-open&quot; : &quot;&quot;)'>
         <b:if cond='data:interval.expclass == &quot;expanded&quot;'>
@@ -3324,16 +3260,16 @@ head.appendChild(script);
       </span>
     </a>
   </b:includable>
-</b:widget>
-<b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost'>
-  <b:widget-settings>
-    <b:widget-setting name='showSnippet'>true</b:widget-setting>
-    <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-    <b:widget-setting name='postId'>6097113140773050121</b:widget-setting>
-    <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-    <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
+  </b:widget>
+  <b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showSnippet'>true</b:widget-setting>
+      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+      <b:widget-setting name='postId'>6097113140773050121</b:widget-setting>
+      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
     <!-- Only display title if it's non-empty -->
     <b:if cond='data:title != &quot;&quot;'>
       <h2 class='title'>
@@ -3344,7 +3280,7 @@ head.appendChild(script);
 
     <b:include name='quickedit'/>
   </b:includable>
-  <b:includable id='content'>
+    <b:includable id='content'>
     <div class='post-summary'>
       <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
         <h3>
@@ -3369,16 +3305,16 @@ head.appendChild(script);
     }
     </style>
   </b:includable>
-</b:widget>
-<b:widget id='Label1' locked='false' title='Tags' type='Label' version='1'>
-  <b:widget-settings>
-    <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
-    <b:widget-setting name='display'>LIST</b:widget-setting>
-    <b:widget-setting name='selectedLabelsList'/>
-    <b:widget-setting name='showType'>ALL</b:widget-setting>
-    <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
-  </b:widget-settings>
-  <b:includable id='main'>
+  </b:widget>
+  <b:widget id='Label1' locked='false' title='Tags' type='Label' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='sorting'>ALPHA</b:widget-setting>
+      <b:widget-setting name='display'>LIST</b:widget-setting>
+      <b:widget-setting name='selectedLabelsList'/>
+      <b:widget-setting name='showType'>ALL</b:widget-setting>
+      <b:widget-setting name='showFreqNumbers'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
     <b:if cond='data:title != &quot;&quot;'>
       <h2>
         <data:title/>
@@ -3427,7 +3363,7 @@ head.appendChild(script);
       <!--b:include name='quickedit'/-->
     </div>
   </b:includable>
-</b:widget>
+  </b:widget>
 </b:section>
 </div>
 <div style='clear: both;'/>
@@ -3438,7 +3374,7 @@ head.appendChild(script);
 
 <div id='pixel-footer-cols'>
 <b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(1)' name='Footer Column [1]' preferred='yes'>
-  <b:widget id='Profile1' locked='false' title='About Me' type='Profile'>
+  <b:widget id='Profile1' locked='false' title='About Me' type='Profile' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showaboutme'>true</b:widget-setting>
       <b:widget-setting name='showlocation'>false</b:widget-setting>
@@ -3703,7 +3639,7 @@ window.selectnav=function(){"use strict";var e=function(e,t){function c(e){var t
 
 
 //main
-$(document).ready(function(e){var t=-1,a="",i="";e("#pixel-menu").find("ul").find("li").each(function(){for(var l=e(this).text(),s=e(this).find("a").attr("href"),n=0,r=0;r<l.length&&-1!=(n=l.indexOf("_",n));r++)n++;if(level=r,level>t&&(a+="<ul>",i+="<ul>"),level<t){offset=t-level;for(r=0;r<offset;r++)a+="</ul></li>",i+="</ul></li>"}l=l.replace(/_/gi,""),a+="<li><a href='"+s+"'>"+l+"</a>",i+="<li><a href='"+s+"'>";for(r=0;r<level;r++)i+="";i+=l+"</a>",t=level});for(var l=0;t>=l;l++)a+="</ul>",i+="</ul>",0!=l&&(a+="</li>",i+="</li>");e("#pixel-menu .LinkList").html(i),e("#pixel-menu > .LinkList > ul").attr("id","pixel_menu"),e("#pixel_menu a").map(function(){var t=e(this).attr("href");-1!=(t=t.toLowerCase()).indexOf("[mega menu]")&&(e(this).addClass("mega-link"),e(this).attr("href","http://pixel-blossom.blogspot.com/search/label/"+e(this).text()+"?&max-results="+perPage))}),selectnav("pixel_menu"),e("#pixel-menu ul > li > ul").parent("li").addClass("hasSubmenu"),e("#pixel-menu .widget").attr("style","display:block!important;"),e("#pixel_menu a.mega-link").map(function(){var t=e(this),a=t.attr("href");if(a=a.toLowerCase(),t.hasClass("mega-link")){var i=t.text();e.ajax({url:"/feeds/posts/default/-/"+i+"?alt=json-in-script&max-results=4",type:"get",dataType:"jsonp",success:function(a){t.closest("li").addClass("isMega hasSubmenu");for(f=0;f<a.feed.link.length;f++){var l=a.feed.link[f],s=l.rel,n=l.type;if("alternate"==s&&"text/html"==n){var r=l.href+"?&max-results="+perPage;t.attr("href",r)}}var d=a.feed.openSearch$totalResults.$t,p=a.feed.openSearch$startIndex.$t,c=a.feed.openSearch$itemsPerPage.$t;if(d>4);else;var o=Math.ceil(d/c);if(a.feed.entry){var m="<ul";m=m+' data-itemnums="'+c+'" data-label="'+i+'" data-start="'+p+'" data-stages="'+o+'" data-cstage="1" data-tpst="'+d+'"',m+='><div class="mega-nav"><a class="mega-prev disable" href="javascript:;"><i class="ion-android-arrow-back"></i></a><a class="mega-next" href="javascript:;"><i class="ion-android-arrow-forward"></i></a></div><div class="pixel-mega-loading" style="display:none">\t<div class="pixel-loading-inner">  <div class="pixel-thecube">\t<div class="pixel-cube pixel-c1"></div>\t<div class="pixel-cube pixel-c2"></div>\t<div class="pixel-cube pixel-c4"></div>\t<div class="pixel-cube pixel-c3"></div>\t\t</div></div>  </div><div class="mega-inner row">';for(var f=0;f<a.feed.entry.length;f++){var u=a.feed.entry[f];if(u.media$thumbnail)-1!==(g=u.media$thumbnail.url).indexOf("/s72-c")&&(g=g.replace("/s72-c","/s1600")),-1!==g.indexOf("img.youtube.com")&&(g=g.replace("/default.jpg","/maxresdefault.jpg"));else var g="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var h=u.title.$t,x=0;x<u.link.length;x++)if("alternate"==u.link[x].rel)var v=u.link[x].href;m=m+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+g+'\')"><a class="linkcover" href="'+v+'"></a></div><div class="pixel-text"><a href="'+v+'">'+h+"</a></div></div>"}m+="</div></ul>",t.after(function(){e(this).after(m);var t=e(this).closest(".isMega");t.find(".mega-prev").click(function(){var t=e(this).closest("ul");t.find(".pixel-mega-loading").fadeIn(0);var a=t.attr("data-label"),i=Number(t.attr("data-start")),l=Number(t.attr("data-cstage")),s=(Number(t.attr("data-stages")),Number(t.attr("data-itemnums")));if(i-=s,l-1<=1?e(this).addClass("disable"):e(this).removeClass("disable"),t.find(".mega-next").removeClass("disable"),l>1){var n="",r="/feeds/posts/default/-/"+a+"?alt=json-in-script&start-index="+i+"&max-results="+s;e.ajax({url:r,type:"get",dataType:"jsonp",success:function(e){if(t.attr("data-start",i),t.attr("data-cstage",l-1),e.feed.entry){for(var a=0;a<e.feed.entry.length;a++){var s=e.feed.entry[a];if(s.media$thumbnail)-1!==(r=s.media$thumbnail.url).indexOf("/s72-c")&&(r=r.replace("/s72-c","/s1600")),-1!==r.indexOf("img.youtube.com")&&(r=r.replace("/default.jpg","/maxresdefault.jpg"));else var r="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var d=s.title.$t,p=0;p<s.link.length;p++)if("alternate"==s.link[p].rel)var c=s.link[p].href;n=n+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+r+'\')"><a class="linkcover" href="'+c+'"></a></div><div class="pixel-text"><a href="'+c+'">'+d+"</a></div></div>"}t.find(".mega-inner").html(n),setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}},error:function(e){setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}})}}),t.find(".mega-next").click(function(){var t=e(this).closest("ul");t.find(".pixel-mega-loading").fadeIn(0);var a=t.attr("data-label"),i=Number(t.attr("data-start")),l=Number(t.attr("data-cstage")),s=Number(t.attr("data-stages")),n=Number(t.attr("data-itemnums"));if(i+=n,l+1==s?e(this).addClass("disable"):e(this).removeClass("disable"),l>=1?t.find(".mega-prev").removeClass("disable"):t.find(".mega-prev").addClass("disable"),s>l){var r="",d="/feeds/posts/default/-/"+a+"?alt=json-in-script&start-index="+i+"&max-results="+n;e.ajax({url:d,type:"get",dataType:"jsonp",success:function(e){if(t.attr("data-start",i),t.attr("data-cstage",l+1),e.feed.entry){for(var a=0;a<e.feed.entry.length;a++){var s=e.feed.entry[a];if(s.media$thumbnail)-1!==(n=s.media$thumbnail.url).indexOf("/s72-c")&&(n=n.replace("/s72-c","/s1600")),-1!==n.indexOf("img.youtube.com")&&(n=n.replace("/default.jpg","/maxresdefault.jpg"));else var n="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var d=s.title.$t,p=0;p<s.link.length;p++)if("alternate"==s.link[p].rel)var c=s.link[p].href;r=r+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+n+'\')"><a class="linkcover" href="'+c+'"></a></div><div class="pixel-text"><a href="'+c+'">'+d+"</a></div></div>"}t.find(".mega-inner").html(r),setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}},error:function(e){setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}})}})})}},error:function(e){}})}}),e(".FeaturedPost .post-summary").map(function(){if(e(this).find(".image")){var t=e(this).find(".image").attr("src");e(this).attr("style","background-image:url("+t+");")}e(this).append("<div class='overlay'></div>")})}),$(document).ready(function(){selectnav("nav")}),$(document).ready(function(){var e=$("#pixel-sidebar-tabs #tabside1 .widget h2").text();$(".pixel-sidebar-tab .item-1 a").text(e);var t=$("#pixel-sidebar-tabs #tabside2 .widget h2").text();$(".pixel-sidebar-tab .item-2 a").text(t);var a=$("#pixel-sidebar-tabs #tabside3 .widget h2").text();$(".pixel-sidebar-tab .item-3 a").text(a),$("#tabside1 .widget h2,#tabside2 .widget h2,#tabside3 .widget h2,#tabside1 .widget-title,#tabside2 .widget-title,#tabside3 .widget-title").remove(),$(this).find(".pixel-sidebar-tab li").addClass("pixel-hide"),$(".pixel-sidebar-tabs").tabslet({mouseevent:"click",attribute:"href",animation:!0}),0===$(".pixel-sidebar-tabs .widget").length&&$(".pixel-sidebar-tabs").remove()}),$(document).ready(function(){cmtal?($(".pixel-tabs").simplyTab({active:1,fx:"fade",showSpeed:400,hideSpeed:400}),$(".pixel-blogger-comment").append($("#comments")),$(".pixel-tabs.simplyTab .pixel-tab-wrapper").wrap("<div class='pixel-tabs-header'/>")):$("#pixel-comment-placer").remove()}),$(".post-home-image .post-thumb a").attr("style",function(e,t){return t.match("hqdefault.jpg")?t.replace("/hqdefault.jpg","/mqdefault.jpg"):t.match("default.jpg")?t.replace("/default.jpg","/mqdefault.jpg"):t.match("s72-c")?t.replace("/s72-c","/s1600"):t.match("w72-h72-p-nu")?t.replace("/w72-h72-p-nu","/s1600"):t.replace("https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png","https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png")}),$(".PopularPosts ul li img").attr("src",function(e,t){return t.match("hqdefault.jpg")?t.replace("/hqdefault.jpg","/mqdefault.jpg"):t.match("default.jpg")?t.replace("/default.jpg","/mqdefault.jpg"):t.match("s72-c")?t.replace("/s72-c","/s1600"):t.match("w72-h72-p-nu")?t.replace("/w72-h72-p-nu","/s1600"):t.replace("https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png","https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.pngg")}),$(document).ready(function(){$('span[name="author-social"]').before($(".post-author-social .widget-content").html()),$(".post-author-social .widget-content").html(""),$('span[name="author-post"]').before($(".post-author-widget .widget-content").html()),$(".post-author-widget .widget-content").html(""),$('a[name="ad-post-top"]').before($("#pixel-advert-2 .widget-content").html()),$("#pixel-advert-2 .widget-content").html(""),$('a[name="ad-post-bottom"]').before($("#pixel-advert-3 .widget-content").html()),$("#pixel-advert-3 .widget-content").html("")}),$(".pixel_featured_widget .HTML .widget-content").map(function(){var e=$(this).find("span").attr("data-label"),t=($(this).find("span").attr("data-no"),$(this).prev("h2").text(),$(this).parent().attr("id"));$(this).find("span").attr("data-type").match("pixelfeatured")&&$.ajax({url:"/feeds/posts/default/-/"+e+"?alt=json-in-script&max-results=3",type:"get",dataType:"jsonp",success:function(a){var i="",l='<div class="pixel-featured">';if(a.feed.entry)for(var s=0;s<a.feed.entry.length;s++){for(var n=0;n<a.feed.entry[s].link.length;n++)if("alternate"==a.feed.entry[s].link[n].rel){i=a.feed.entry[s].link[n].href;break}if("content"in a.feed.entry[s])r=a.feed.entry[s].content.$t;else if("summary"in b_rc)r=a.feed.entry[s].summary.$t;else var r="";var d=/<\S[^>]*>/g;(r=r.replace(d,"")).length>120&&(r=r.substring(0,100)+"...");var p=a.feed.entry[s].title.$t,c=a.feed.entry[s].category[0].term,o=a.feed.entry[s].author[0].name.$t,m=a.feed.entry[s].published.$t,f=m.substring(0,4),u=m.substring(5,7),g=m.substring(8,10),h=month_format[parseInt(u,10)]+" "+g+", "+f,x=a.feed.entry[s].content.$t,v=$("<div>").html(x);if(x.indexOf("//www.youtube.com/embed/")>-1)b=a.feed.entry[s].media$thumbnail.url;else if(x.indexOf("<img")>-1)b=v.find("img:first").attr("src");else var b=no_image;l+=0==s?'<div class="pixel-hero"><div class="pixel-featured-image"><div class="pixelfeatured-thumb"><a class="blsm-img" href="'+i+'" style="background:url('+b+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a></div><div class="pixel-hero-content"><div class="pixel-label"><a class="icon '+c+'" href="/search/label/'+c+'">'+c+'</a></div><h3 class="pixelfeatured-title"><a href="'+i+'">'+p+'</a></h3><span class="pixel-author">'+o+'</span><span class="pixel-time">'+h+"</span></div></div></div>":'<div class="pixel-secondary"><div class="pixelfeatured-thumb"><a class="pixel-thumb" href="'+i+'" style="background:url('+b+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a></div><div class="pixel-content"><div class="pixel-label"><a class="icon '+c+'" href="/search/label/'+c+'">'+c+'</a></div><h3 class="pixelfeatured-title"><a href="'+i+'">'+p+'</a></h3><span class="pixel-author">'+o+'</span><span class="pixel-time">'+h+'</span></div><div class="clear"/></div>'}else l=l+'<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}</style><div class="pixel-empty-panel"><div class="pixel-empty-thumb"><img src="https://1.bp.blogspot.com/-FCuCIgXt2v8/WdDfhsYYoZI/AAAAAAAAAhk/X-ke9mcD1KsrOnsxV2z15nup1TkXkw36wCLcBGAs/s1600/trpgrid.png"></div><div class="pixel-empty-text"><h3>No posts found for label : "'+e+'". <br/> <span class="pixel-small">You can disable this widget by removing all the widget content from layout tab.</span></h3></div></div>';l+="</div>",$(".pixel_featured_widget .HTML .widget-content").each(function(){$(this).parent().attr("id")==t&&($(this).html(l),$(this).parent().addClass("pixelfeatured"),$(this).parent().addClass("pixl"),$(".pixel_featured_widget").addClass("pixel-implied").removeClass("pixel-initiate"),$(this).find(".pixel-thumb,.blsm-img").each(function(){$(this).attr("style",function(e,t){return t.replace("/default.jpg","/mqdefault.jpg")}).attr("style",function(e,t){return t.replace("s72-c","s1600")})}))})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-cmnt").each(function(){var e=$(this).attr("data-no");$.ajax({url:"/feeds/comments/default?alt=json-in-script&max-results="+e,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-comments">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length&&l!=t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}if("content"in t.feed.entry[l])n=t.feed.entry[l].content.$t;else if("summary"in b_rc)n=t.feed.entry[l].summary.$t;else var n="";var r=/<\S[^>]*>/g;(n=n.replace(r,"")).length>70&&(n=n.substring(0,50)+"...");var d=t.feed.entry[l].author[0].name.$t,p=t.feed.entry[l].author[0].gd$image.src;if(p.match("http://img1.blogblog.com/img/blank.gif"))c="http://img1.blogblog.com/img/anon36.png";else if(p.match("http://img2.blogblog.com/img/b16-rounded.gif"))c="http://img1.blogblog.com/img/anon36.png";else var c=p;i+='<div class="pixel-comment"><div class="pixel-comment-profile"><img class="pixel-comment-thumb" src="'+c+'"/></div><a href="'+a+'">'+d+'</a><span>"'+n+'"</span></div>'}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No comments! <br/></h3></div></div>';i+='</div><div class="clear"/>',$(".pixel-widetize .HTML .widget-content span.pixel-cmnt").each(function(){$(this).attr("data-no")==e&&$(this).parent().html(i)})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-recent").each(function(){var e=$(this).attr("data-no");$.ajax({url:"/feeds/posts/default?alt=json-in-script&max-results="+e,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-recent">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}var n=t.feed.entry[l].title.$t,r=(t.feed.entry[l].category[0].term,t.feed.entry[l].author[0].name.$t),d=t.feed.entry[l].published.$t,p=d.substring(0,4),c=d.substring(5,7),o=d.substring(8,10),m=month_format[parseInt(c,10)]+" "+o+", "+p,f=t.feed.entry[l].content.$t,u=$("<div>").html(f);if(f.indexOf("//www.youtube.com/embed/")>-1)g=t.feed.entry[l].media$thumbnail.url.replace("/default.jpg","/mqdefault.jpg");else if(f.indexOf("<img")>-1)g=u.find("img:first").attr("src").replace("s72-c","s1600");else var g=no_image;i+='<div class="pixel-recent-item"><a class="pixel-recent-thumb" href="'+a+'" style="background:url('+g+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a><div class="pixel-recent-content"><h3 class="pixel-recent-title"><a href="'+a+'">'+n+'</a></h3><span class="pixel-author">'+r+'</span><span class="pixel-time">'+m+"</span></div></div>"}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No Posts found! <br/></h3></div></div>';i+="</div>",$(".pixel-widetize .HTML .widget-content span.pixel-recent").each(function(){$(this).attr("data-no")==e&&$(this).parent().html(i)})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-tagswid").each(function(){var e=$(this).attr("data-label"),t=$(this).attr("data-no");$.ajax({url:"/feeds/posts/default/-/"+e+"?alt=json-in-script&max-results="+t,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-recent">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}var n=t.feed.entry[l].title.$t,r=(t.feed.entry[l].category[0].term,t.feed.entry[l].author[0].name.$t),d=t.feed.entry[l].published.$t,p=d.substring(0,4),c=d.substring(5,7),o=d.substring(8,10),m=month_format[parseInt(c,10)]+" "+o+", "+p,f=t.feed.entry[l].content.$t,u=$("<div>").html(f);if(f.indexOf("//www.youtube.com/embed/")>-1)g=t.feed.entry[l].media$thumbnail.url.replace("/default.jpg","/mqdefault.jpg");else if(f.indexOf("<img")>-1)g=u.find("img:first").attr("src").replace("s72-c","s1600");else var g=no_image;i+='<div class="pixel-recent-item"><a class="pixel-recent-thumb" href="'+a+'" style="background:url('+g+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a><div class="pixel-recent-content"><h3 class="pixel-recent-title"><a href="'+a+'">'+n+'</a></h3><span class="pixel-author">'+r+'</span><span class="pixel-time">'+m+"</span></div></div>"}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No Posts found! <br/></h3></div></div>';i+="</div>",$(".pixel-widetize .HTML .widget-content span.pixel-tagswid").each(function(){$(this).attr("data-label")==e&&$(this).parent().html(i)})}})}),$(document).ready(function(){$('span[name="author-social"]').before($(".post-author-social .widget-content").html()),$(".post-author-social .widget-content").html(""),$('span[name="author-post"]').before($(".post-author-widget .widget-content").html()),$(".post-author-widget .widget-content").html("")}),$(".blsm-comment").click(function(){$("html, body").animate({scrollTop:$("#pixel-comment-placer").offset().top},1e3)});
+$(document).ready(function(e){var t=-1,a="",i="";e("#pixel-menu").find("ul").find("li").each(function(){for(var l=e(this).text(),s=e(this).find("a").attr("href"),n=0,r=0;r<l.length&&-1!=(n=l.indexOf("_",n));r++)n++;if(level=r,level>t&&(a+="<ul>",i+="<ul>"),level<t){offset=t-level;for(r=0;r<offset;r++)a+="</ul></li>",i+="</ul></li>"}l=l.replace(/_/gi,""),a+="<li><a href='"+s+"'>"+l+"</a>",i+="<li><a href='"+s+"'>";for(r=0;r<level;r++)i+="";i+=l+"</a>",t=level});for(var l=0;t>=l;l++)a+="</ul>",i+="</ul>",0!=l&&(a+="</li>",i+="</li>");e("#pixel-menu .LinkList").html(i),e("#pixel-menu > .LinkList > ul").attr("id","pixel_menu"),e("#pixel_menu a").map(function(){var t=e(this).attr("href");-1!=(t=t.toLowerCase()).indexOf("[mega menu]")&&(e(this).addClass("mega-link"),e(this).attr("href","https://desicycle.com/search/label/"+e(this).text()+"?&max-results="+perPage))}),selectnav("pixel_menu"),e("#pixel-menu ul > li > ul").parent("li").addClass("hasSubmenu"),e("#pixel-menu .widget").attr("style","display:block!important;"),e("#pixel_menu a.mega-link").map(function(){var t=e(this),a=t.attr("href");if(a=a.toLowerCase(),t.hasClass("mega-link")){var i=t.text();e.ajax({url:"/feeds/posts/default/-/"+i+"?alt=json-in-script&max-results=4",type:"get",dataType:"jsonp",success:function(a){t.closest("li").addClass("isMega hasSubmenu");for(f=0;f<a.feed.link.length;f++){var l=a.feed.link[f],s=l.rel,n=l.type;if("alternate"==s&&"text/html"==n){var r=l.href+"?&max-results="+perPage;t.attr("href",r)}}var d=a.feed.openSearch$totalResults.$t,p=a.feed.openSearch$startIndex.$t,c=a.feed.openSearch$itemsPerPage.$t;if(d>4);else;var o=Math.ceil(d/c);if(a.feed.entry){var m="<ul";m=m+' data-itemnums="'+c+'" data-label="'+i+'" data-start="'+p+'" data-stages="'+o+'" data-cstage="1" data-tpst="'+d+'"',m+='><div class="mega-nav"><a class="mega-prev disable" href="javascript:;"><i class="ion-android-arrow-back"></i></a><a class="mega-next" href="javascript:;"><i class="ion-android-arrow-forward"></i></a></div><div class="pixel-mega-loading" style="display:none">\t<div class="pixel-loading-inner">  <div class="pixel-thecube">\t<div class="pixel-cube pixel-c1"></div>\t<div class="pixel-cube pixel-c2"></div>\t<div class="pixel-cube pixel-c4"></div>\t<div class="pixel-cube pixel-c3"></div>\t\t</div></div>  </div><div class="mega-inner row">';for(var f=0;f<a.feed.entry.length;f++){var u=a.feed.entry[f];if(u.media$thumbnail)-1!==(g=u.media$thumbnail.url).indexOf("/s72-c")&&(g=g.replace("/s72-c","/s1600")),-1!==g.indexOf("img.youtube.com")&&(g=g.replace("/default.jpg","/maxresdefault.jpg"));else var g="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var h=u.title.$t,x=0;x<u.link.length;x++)if("alternate"==u.link[x].rel)var v=u.link[x].href;m=m+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+g+'\')"><a class="linkcover" href="'+v+'"></a></div><div class="pixel-text"><a href="'+v+'">'+h+"</a></div></div>"}m+="</div></ul>",t.after(function(){e(this).after(m);var t=e(this).closest(".isMega");t.find(".mega-prev").click(function(){var t=e(this).closest("ul");t.find(".pixel-mega-loading").fadeIn(0);var a=t.attr("data-label"),i=Number(t.attr("data-start")),l=Number(t.attr("data-cstage")),s=(Number(t.attr("data-stages")),Number(t.attr("data-itemnums")));if(i-=s,l-1<=1?e(this).addClass("disable"):e(this).removeClass("disable"),t.find(".mega-next").removeClass("disable"),l>1){var n="",r="/feeds/posts/default/-/"+a+"?alt=json-in-script&start-index="+i+"&max-results="+s;e.ajax({url:r,type:"get",dataType:"jsonp",success:function(e){if(t.attr("data-start",i),t.attr("data-cstage",l-1),e.feed.entry){for(var a=0;a<e.feed.entry.length;a++){var s=e.feed.entry[a];if(s.media$thumbnail)-1!==(r=s.media$thumbnail.url).indexOf("/s72-c")&&(r=r.replace("/s72-c","/s1600")),-1!==r.indexOf("img.youtube.com")&&(r=r.replace("/default.jpg","/maxresdefault.jpg"));else var r="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var d=s.title.$t,p=0;p<s.link.length;p++)if("alternate"==s.link[p].rel)var c=s.link[p].href;n=n+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+r+'\')"><a class="linkcover" href="'+c+'"></a></div><div class="pixel-text"><a href="'+c+'">'+d+"</a></div></div>"}t.find(".mega-inner").html(n),setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}},error:function(e){setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}})}}),t.find(".mega-next").click(function(){var t=e(this).closest("ul");t.find(".pixel-mega-loading").fadeIn(0);var a=t.attr("data-label"),i=Number(t.attr("data-start")),l=Number(t.attr("data-cstage")),s=Number(t.attr("data-stages")),n=Number(t.attr("data-itemnums"));if(i+=n,l+1==s?e(this).addClass("disable"):e(this).removeClass("disable"),l>=1?t.find(".mega-prev").removeClass("disable"):t.find(".mega-prev").addClass("disable"),s>l){var r="",d="/feeds/posts/default/-/"+a+"?alt=json-in-script&start-index="+i+"&max-results="+n;e.ajax({url:d,type:"get",dataType:"jsonp",success:function(e){if(t.attr("data-start",i),t.attr("data-cstage",l+1),e.feed.entry){for(var a=0;a<e.feed.entry.length;a++){var s=e.feed.entry[a];if(s.media$thumbnail)-1!==(n=s.media$thumbnail.url).indexOf("/s72-c")&&(n=n.replace("/s72-c","/s1600")),-1!==n.indexOf("img.youtube.com")&&(n=n.replace("/default.jpg","/maxresdefault.jpg"));else var n="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";for(var d=s.title.$t,p=0;p<s.link.length;p++)if("alternate"==s.link[p].rel)var c=s.link[p].href;r=r+'<div class="pixel-mega-item col-sm-3"><div class="pixel-m-thumb" style="background:url(\''+n+'\')"><a class="linkcover" href="'+c+'"></a></div><div class="pixel-text"><a href="'+c+'">'+d+"</a></div></div>"}t.find(".mega-inner").html(r),setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}},error:function(e){setTimeout(function(){t.find(".pixel-mega-loading").fadeOut()},1e3)}})}})})}},error:function(e){}})}}),e(".FeaturedPost .post-summary").map(function(){if(e(this).find(".image")){var t=e(this).find(".image").attr("src");e(this).attr("style","background-image:url("+t+");")}e(this).append("<div class='overlay'></div>")})}),$(document).ready(function(){selectnav("nav")}),$(document).ready(function(){var e=$("#pixel-sidebar-tabs #tabside1 .widget h2").text();$(".pixel-sidebar-tab .item-1 a").text(e);var t=$("#pixel-sidebar-tabs #tabside2 .widget h2").text();$(".pixel-sidebar-tab .item-2 a").text(t);var a=$("#pixel-sidebar-tabs #tabside3 .widget h2").text();$(".pixel-sidebar-tab .item-3 a").text(a),$("#tabside1 .widget h2,#tabside2 .widget h2,#tabside3 .widget h2,#tabside1 .widget-title,#tabside2 .widget-title,#tabside3 .widget-title").remove(),$(this).find(".pixel-sidebar-tab li").addClass("pixel-hide"),$(".pixel-sidebar-tabs").tabslet({mouseevent:"click",attribute:"href",animation:!0}),0===$(".pixel-sidebar-tabs .widget").length&&$(".pixel-sidebar-tabs").remove()}),$(document).ready(function(){cmtal?($(".pixel-tabs").simplyTab({active:1,fx:"fade",showSpeed:400,hideSpeed:400}),$(".pixel-blogger-comment").append($("#comments")),$(".pixel-tabs.simplyTab .pixel-tab-wrapper").wrap("<div class='pixel-tabs-header'/>")):$("#pixel-comment-placer").remove()}),$(".post-home-image .post-thumb a").attr("style",function(e,t){return t.match("hqdefault.jpg")?t.replace("/hqdefault.jpg","/mqdefault.jpg"):t.match("default.jpg")?t.replace("/default.jpg","/mqdefault.jpg"):t.match("s72-c")?t.replace("/s72-c","/s1600"):t.match("w72-h72-p-nu")?t.replace("/w72-h72-p-nu","/s1600"):t.replace("https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png","https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png")}),$(".PopularPosts ul li img").attr("src",function(e,t){return t.match("hqdefault.jpg")?t.replace("/hqdefault.jpg","/mqdefault.jpg"):t.match("default.jpg")?t.replace("/default.jpg","/mqdefault.jpg"):t.match("s72-c")?t.replace("/s72-c","/s1600"):t.match("w72-h72-p-nu")?t.replace("/w72-h72-p-nu","/s1600"):t.replace("https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png","https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.pngg")}),$(document).ready(function(){$('span[name="author-social"]').before($(".post-author-social .widget-content").html()),$(".post-author-social .widget-content").html(""),$('span[name="author-post"]').before($(".post-author-widget .widget-content").html()),$(".post-author-widget .widget-content").html(""),$('a[name="ad-post-top"]').before($("#pixel-advert-2 .widget-content").html()),$("#pixel-advert-2 .widget-content").html(""),$('a[name="ad-post-bottom"]').before($("#pixel-advert-3 .widget-content").html()),$("#pixel-advert-3 .widget-content").html("")}),$(".pixel_featured_widget .HTML .widget-content").map(function(){var e=$(this).find("span").attr("data-label"),t=($(this).find("span").attr("data-no"),$(this).prev("h2").text(),$(this).parent().attr("id"));$(this).find("span").attr("data-type").match("pixelfeatured")&&$.ajax({url:"/feeds/posts/default/-/"+e+"?alt=json-in-script&max-results=3",type:"get",dataType:"jsonp",success:function(a){var i="",l='<div class="pixel-featured">';if(a.feed.entry)for(var s=0;s<a.feed.entry.length;s++){for(var n=0;n<a.feed.entry[s].link.length;n++)if("alternate"==a.feed.entry[s].link[n].rel){i=a.feed.entry[s].link[n].href;break}if("content"in a.feed.entry[s])r=a.feed.entry[s].content.$t;else if("summary"in b_rc)r=a.feed.entry[s].summary.$t;else var r="";var d=/<\S[^>]*>/g;(r=r.replace(d,"")).length>120&&(r=r.substring(0,100)+"...");var p=a.feed.entry[s].title.$t,c=a.feed.entry[s].category[0].term,o=a.feed.entry[s].author[0].name.$t,m=a.feed.entry[s].published.$t,f=m.substring(0,4),u=m.substring(5,7),g=m.substring(8,10),h=month_format[parseInt(u,10)]+" "+g+", "+f,x=a.feed.entry[s].content.$t,v=$("<div>").html(x);if(x.indexOf("//www.youtube.com/embed/")>-1)b=a.feed.entry[s].media$thumbnail.url;else if(x.indexOf("<img")>-1)b=v.find("img:first").attr("src");else var b=no_image;l+=0==s?'<div class="pixel-hero"><div class="pixel-featured-image"><div class="pixelfeatured-thumb"><a class="blsm-img" href="'+i+'" style="background:url('+b+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a></div><div class="pixel-hero-content"><div class="pixel-label"><a class="icon '+c+'" href="/search/label/'+c+'">'+c+'</a></div><h3 class="pixelfeatured-title"><a href="'+i+'">'+p+'</a></h3><span class="pixel-author">'+o+'</span><span class="pixel-time">'+h+"</span></div></div></div>":'<div class="pixel-secondary"><div class="pixelfeatured-thumb"><a class="pixel-thumb" href="'+i+'" style="background:url('+b+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a></div><div class="pixel-content"><div class="pixel-label"><a class="icon '+c+'" href="/search/label/'+c+'">'+c+'</a></div><h3 class="pixelfeatured-title"><a href="'+i+'">'+p+'</a></h3><span class="pixel-author">'+o+'</span><span class="pixel-time">'+h+'</span></div><div class="clear"/></div>'}else l=l+'<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}</style><div class="pixel-empty-panel"><div class="pixel-empty-thumb"><img src="https://1.bp.blogspot.com/-FCuCIgXt2v8/WdDfhsYYoZI/AAAAAAAAAhk/X-ke9mcD1KsrOnsxV2z15nup1TkXkw36wCLcBGAs/s1600/trpgrid.png"></div><div class="pixel-empty-text"><h3>No posts found for label : "'+e+'". <br/> <span class="pixel-small">You can disable this widget by removing all the widget content from layout tab.</span></h3></div></div>';l+="</div>",$(".pixel_featured_widget .HTML .widget-content").each(function(){$(this).parent().attr("id")==t&&($(this).html(l),$(this).parent().addClass("pixelfeatured"),$(this).parent().addClass("pixl"),$(".pixel_featured_widget").addClass("pixel-implied").removeClass("pixel-initiate"),$(this).find(".pixel-thumb,.blsm-img").each(function(){$(this).attr("style",function(e,t){return t.replace("/default.jpg","/mqdefault.jpg")}).attr("style",function(e,t){return t.replace("s72-c","s1600")})}))})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-cmnt").each(function(){var e=$(this).attr("data-no");$.ajax({url:"/feeds/comments/default?alt=json-in-script&max-results="+e,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-comments">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length&&l!=t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}if("content"in t.feed.entry[l])n=t.feed.entry[l].content.$t;else if("summary"in b_rc)n=t.feed.entry[l].summary.$t;else var n="";var r=/<\S[^>]*>/g;(n=n.replace(r,"")).length>70&&(n=n.substring(0,50)+"...");var d=t.feed.entry[l].author[0].name.$t,p=t.feed.entry[l].author[0].gd$image.src;if(p.match("http://img1.blogblog.com/img/blank.gif"))c="http://img1.blogblog.com/img/anon36.png";else if(p.match("http://img2.blogblog.com/img/b16-rounded.gif"))c="http://img1.blogblog.com/img/anon36.png";else var c=p;i+='<div class="pixel-comment"><div class="pixel-comment-profile"><img class="pixel-comment-thumb" src="'+c+'"/></div><a href="'+a+'">'+d+'</a><span>"'+n+'"</span></div>'}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No comments! <br/></h3></div></div>';i+='</div><div class="clear"/>',$(".pixel-widetize .HTML .widget-content span.pixel-cmnt").each(function(){$(this).attr("data-no")==e&&$(this).parent().html(i)})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-recent").each(function(){var e=$(this).attr("data-no");$.ajax({url:"/feeds/posts/default?alt=json-in-script&max-results="+e,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-recent">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}var n=t.feed.entry[l].title.$t,r=(t.feed.entry[l].category[0].term,t.feed.entry[l].author[0].name.$t),d=t.feed.entry[l].published.$t,p=d.substring(0,4),c=d.substring(5,7),o=d.substring(8,10),m=month_format[parseInt(c,10)]+" "+o+", "+p,f=t.feed.entry[l].content.$t,u=$("<div>").html(f);if(f.indexOf("//www.youtube.com/embed/")>-1)g=t.feed.entry[l].media$thumbnail.url.replace("/default.jpg","/mqdefault.jpg");else if(f.indexOf("<img")>-1)g=u.find("img:first").attr("src").replace("s72-c","s1600");else var g=no_image;i+='<div class="pixel-recent-item"><a class="pixel-recent-thumb" href="'+a+'" style="background:url('+g+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a><div class="pixel-recent-content"><h3 class="pixel-recent-title"><a href="'+a+'">'+n+'</a></h3><span class="pixel-author">'+r+'</span><span class="pixel-time">'+m+"</span></div></div>"}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No Posts found! <br/></h3></div></div>';i+="</div>",$(".pixel-widetize .HTML .widget-content span.pixel-recent").each(function(){$(this).attr("data-no")==e&&$(this).parent().html(i)})}})}),$(".pixel-widetize .HTML .widget-content span.pixel-tagswid").each(function(){var e=$(this).attr("data-label"),t=$(this).attr("data-no");$.ajax({url:"/feeds/posts/default/-/"+e+"?alt=json-in-script&max-results="+t,type:"get",dataType:"jsonp",success:function(t){var a="",i='<div class="pixel-recent">';if(t.feed.entry)for(var l=0;l<t.feed.entry.length;l++){for(var s=0;s<t.feed.entry[l].link.length;s++)if("alternate"==t.feed.entry[l].link[s].rel){a=t.feed.entry[l].link[s].href;break}var n=t.feed.entry[l].title.$t,r=(t.feed.entry[l].category[0].term,t.feed.entry[l].author[0].name.$t),d=t.feed.entry[l].published.$t,p=d.substring(0,4),c=d.substring(5,7),o=d.substring(8,10),m=month_format[parseInt(c,10)]+" "+o+", "+p,f=t.feed.entry[l].content.$t,u=$("<div>").html(f);if(f.indexOf("//www.youtube.com/embed/")>-1)g=t.feed.entry[l].media$thumbnail.url.replace("/default.jpg","/mqdefault.jpg");else if(f.indexOf("<img")>-1)g=u.find("img:first").attr("src").replace("s72-c","s1600");else var g=no_image;i+='<div class="pixel-recent-item"><a class="pixel-recent-thumb" href="'+a+'" style="background:url('+g+') no-repeat center center;background-size: cover"><span class="pixel-trap"/></a><div class="pixel-recent-content"><h3 class="pixel-recent-title"><a href="'+a+'">'+n+'</a></h3><span class="pixel-author">'+r+'</span><span class="pixel-time">'+m+"</span></div></div>"}else i+='<style>.pixel-empty-panel img{max-width: 600px; width:100%}.pixel-empty-panel{text-align: center;}.pixel-empty-text h3{font-weight: 600;font-size:18px;line-height: 24px;margin-bottom:50px;}.bgr{background: rgb(236,239,241);}.bgr{box-sizing: border-box;padding:5px 10px;}</style><div class="pixel-empty-panel bgr"><div class="pixel-empty-thumb"><img src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-empty-text"><h3>No Posts found! <br/></h3></div></div>';i+="</div>",$(".pixel-widetize .HTML .widget-content span.pixel-tagswid").each(function(){$(this).attr("data-label")==e&&$(this).parent().html(i)})}})}),$(document).ready(function(){$('span[name="author-social"]').before($(".post-author-social .widget-content").html()),$(".post-author-social .widget-content").html(""),$('span[name="author-post"]').before($(".post-author-widget .widget-content").html()),$(".post-author-widget .widget-content").html("")}),$(".blsm-comment").click(function(){$("html, body").animate({scrollTop:$("#pixel-comment-placer").offset().top},1e3)});
  //]]>
 </script>
 
@@ -3777,7 +3713,7 @@ $("#sidebar-wrapper").stick_in_parent();
 <b:if cond='data:blog.url == data:blog.homepageUrl'>
 <script type='text/javascript'>
 //<![CDATA[
-var $=jQuery;$(".custwid .pixel-widget").map(function(){function e(e,i){return e.replace(/<.*?>/gi,"").split(/\s+/).slice(0,i-1).join(" ")}var i=$(this),a=i.attr("data-label"),l=i.attr("data-type");l=l.toLowerCase();var t="ntpl",s="";$.ajax({url:"/feeds/posts/default/-/"+a+"?alt=json-in-script&max-results=5",type:"get",dataType:"jsonp",success:function(r){for(ll=0;ll<r.feed.link.length;ll++){var d=r.feed.link[ll];"alternate"==d.rel&&i.closest(".widget-content").parent(".widget").children("h2.title").after('<div class="pixel-right-all"><a href="'+d.href+"?&max-results="+perPage+'">view all <i class="ion-ios-arrow-right"></i></a></div>')}switch(l){case"list":s+='<div class="pixel-widget list">';break;case"gallery":s+='<div class="pixel-widget gallery">'}if(r.feed.entry)for(var n=0;n<r.feed.entry.length;n++){var o=r.feed.entry[n],c=o.title.$t;for(k=0;k<o.link.length;k++)if("alternate"==o.link[k].rel)var p=o.link[k].href;var f=o.author[0].name.$t,h=o.author[0].uri.$t,u=(o.published.$t,o.content.$t,o.published.$t),m=u.split("T"),v=" "+["January","February","March","April","May","June","July","August","September","October","November","December"][(m=m[0].split("-"))[1]-1]+" "+m[2]+", "+m[0];if(o.media$thumbnail.url)-1!==(g=o.media$thumbnail.url).indexOf("/s72-c")&&(g=g.replace("/s72-c","/s1600")),-1!==g.indexOf("img.youtube.com")&&(g=g.replace("/default.jpg","/maxresdefault.jpg"));else var g="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";switch(l){case"list":s=0==(b=n)?s+'<div class="pixel-widget-col-1 pixel-list-col"><article class="pixel-post"><div class="pixel-parentover"><div class="pixel-list-media"><a href="'+p+'"><img alt="'+c+'" src="'+g+'"></a><div class="pixel-post-share"><div class="pixel-cell"><ul class="social-icons list-unstyled list-inline"><li class="social-item facebook"> <a href="http://www.facebook.com/sharer.php?u='+p+'" title="facebook" class="post_share_facebook facebook" onclick="javascript:window.open(this.href,\'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600\');return false;"> <i class="fa fa-facebook"></i> </a></li><li class="social-item twitter"> <a href="https://twitter.com/share?url='+p+'" title="twitter" onclick="javascript:window.open(this.href,\'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600\');return false;" class="product_share_twitter twitter"> <i class="fa fa-twitter"></i> </a></li><li class="social-item google"> <a href="https://plus.google.com/share?url='+p+'" class="googleplus" title="google +" onclick="javascript:window.open(this.href,\'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600\');return false;"> <i class="fa fa-google-plus"></i> </a></li></ul></div></div></div><div class="pixel-box-list"><div class="pixel-box-inside"><div class="pixel-list-content"><div class="entry-header"><h3 class="entry-title"><a href="'+p+'" rel="bookmark">'+c+'</a></h3></div></div><div class="article-meta"><span class="byline"><i class="ion-ios-person-outline"></i><span class="author vcard"><a class="url fn n" href="'+h+'">'+f+'</a></span></span> <span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+'</time></a></span></div><Div class="entry-content"><div>'+e(o.content.$t,25)+'...</div><a class="btn-read" href="'+p+'">Read More</a></div></div></div></div></article></div><div class="pixel-widget-col-2 pixel-list-col">':s+'<article class="pixel-post"><div class="article-image"><div class="post-image"><a href="'+p+'" style="background:black url('+g+')" rel="bookmark"></a></div></div><div class="article-content side-item-text"><div class="entry-header"><div class="entry-header-title"><h3 class="entry-title"><a href="'+p+'" rel="bookmark">'+c+'</a></h3></div></div><div class="article-meta"><span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+"</time></a></span></div></div></article>";break;case"gallery":if(o="",-1!==g.indexOf("img.youtube.com"))y=g.substr(g.indexOf("/vi/")+4,11);else var y="regular";var b=n;0==b&&(s=s+'<div class="pixel-gallery-feature"><div class="pixel-iframe-hidden"><iframe width="100%" height="400" src="https://www.youtube.com/embed/'+y+'" frameborder="0" allowfullscreen></iframe></div><div class="feature-image  '+y+'" data-vidid="'+y+'" style="background:url('+g+')"></div><div class="pixel-absolutize"><div class="pixel-dyn-t"><h3><a href="'+p+'">'+c+'</a></h3></div><div class="article-meta"><span class="byline"><i class="ion-ios-person-outline"></i><span class="author vcard"><a class="url fn n" href="'+h+'">'+f+'</a></span></span> <span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+'</time></a></span></div></div></div></div><div class="pixel-slider owl-carousel owl-theme">'),s=s+'<div class="pixel-gallery-post slide item dy-dn"><div class="'+t+" "+y+' img_dyn getinfo" data-vidid="'+y+'" data-img="'+g+'" style="background:url('+g+')" data-auth="'+f+'" data-auth-uri="'+h+'" data-time="'+v+'"></div><div class="pixel-slide-title"><h3><a href="'+p+'">'+c+"</a></h3></div></div>",0==b&&(t="playing")}}else s=s+'<div class="pixel-empty"><div class="pixel-no-post"><div class="pixel-entry-no-icon"><img class="pixel-empty" alt="pixel-empty" src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-no-title"><h3 class="pixel-postmatch">No posts matching tag "'+a+'".</h3></div></div>';switch(l){case"list":s+='</div><div class="clearfix"></div></div>';break;case"gallery":s+='</div></div><div class="clearfix"></div></div>'}},complete:function(){switch(i.append(s),l){case"gallery":i.find(".pixel-gallery-feature .feature-image").click(function(){var e=$(this).attr("data-vidid");if("regular"!==e){var i='<iframe src="https://www.youtube.com/embed/'+e+'?autoplay=1" allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>',a=$(this).closest(".pixel-gallery-feature");a.find(".pixel-iframe-hidden").html(i),a.find(".pixel-iframe-hidden").fadeIn(0),a.find(".feature-image").fadeOut(0)}}),i.find(".dy-dn.slide.pixel-gallery-post").map(function(){$(this).click(function(){var e=$(this).find(".img_dyn.getinfo").attr("data-vidid");$(".ntpl").addClass("playing").removeClass("ntpl"),$(this).find(".img_dyn.getinfo").removeClass("playing").addClass("ntpl");var i=$(this).find(".img_dyn.getinfo").attr("data-img"),a=$(this).find(".pixel-slide-title").html(),l=$(this).find(".img_dyn.getinfo").attr("data-time"),t=$(this).find(".img_dyn.getinfo").attr("data-auth"),s=$(this).find(".img_dyn.getinfo").attr("data-auth-uri");if("regular"!==e){var r='<iframe src="https://www.youtube.com/embed/'+e+'?autoplay=1" allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>';(n=(d=$(this).closest(".pixel-slider").closest("object.pixel-widget")).find(".pixel-widget.gallery").find(".pixel-gallery-feature")).find(".author.vcard a").attr("href",s),n.find(".author.vcard a").html(t),n.find(".pixel-dyn-t").html(a),n.find("time").html(l),n.find(".pixel-iframe-hidden").html(r),n.find(".pixel-iframe-hidden").fadeIn(0),n.find(".feature-image").fadeOut(0)}else{var d=$(this).closest(".pixel-slider").closest("object.pixel-widget"),n=d.find(".pixel-widget.gallery").find(".pixel-gallery-feature");n.find(".feature-image").attr("style","background:url("+i+");"),n.find(".author.vcard a").attr("href",s),n.find(".author.vcard a").html(t),n.find(".pixel-dyn-t").html(a),n.find("time").html(l),n.find(".pixel-iframe-hidden").html("").fadeOut(0),n.find(".feature-image").fadeIn(0)}})}),i.find(".pixel-slider").owlCarousel({loop:!1,nav:!0,navText:["<i class='ion-ios-arrow-back'></i>","<i class='ion-ios-arrow-forward'></i>"],responsive:{0:{items:1},400:{items:2},500:{items:3},600:{items:4}}})}}}),i.append(s)});
+var $=jQuery;$(".custwid .pixel-widget").map(function(){function e(e,i){return e.replace(/<.*?>/gi,"").split(/\s+/).slice(0,i-1).join(" ")}var i=$(this),a=i.attr("data-label"),l=i.attr("data-type");l=l.toLowerCase();var t="ntpl",s="";$.ajax({url:"/feeds/posts/default/-/"+a+"?alt=json-in-script&max-results=5",type:"get",dataType:"jsonp",success:function(r){for(ll=0;ll<r.feed.link.length;ll++){var d=r.feed.link[ll];"alternate"==d.rel&&i.closest(".widget-content").parent(".widget").children("h2.title").after('<div class="pixel-right-all"><a href="'+d.href+"?&max-results="+perPage+'">view all <i class="ion-ios-arrow-right"></i></a></div>')}switch(l){case"list":s+='<div class="pixel-widget list">';break;case"gallery":s+='<div class="pixel-widget gallery">'}if(r.feed.entry)for(var n=0;n<r.feed.entry.length;n++){var o=r.feed.entry[n],c=o.title.$t;for(k=0;k<o.link.length;k++)if("alternate"==o.link[k].rel)var p=o.link[k].href;var f=o.author[0].name.$t,h=o.author[0].uri.$t,u=(o.published.$t,o.content.$t,o.published.$t),m=u.split("T"),v=" "+["January","February","March","April","May","June","July","August","September","October","November","December"][(m=m[0].split("-"))[1]-1]+" "+m[2]+", "+m[0];if(o.media$thumbnail.url)-1!==(g=o.media$thumbnail.url).indexOf("/s72-c")&&(g=g.replace("/s72-c","/s1600")),-1!==g.indexOf("img.youtube.com")&&(g=g.replace("/default.jpg","/maxresdefault.jpg"));else var g="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png";switch(l){case"list":s=0==(b=n)?s+'<div class="pixel-widget-col-1 pixel-list-col"><article class="pixel-post"><div class="pixel-parentover"><div class="pixel-list-media"><a href="'+p+'"><img alt="'+c+'" src="'+g+'"></a><div class="pixel-post-share"><div class="pixel-cell"><ul class="social-icons list-unstyled list-inline"><li class="social-item facebook"> <a href="http://www.facebook.com/sharer.php?u='+p+'" title="facebook" class="post_share_facebook facebook" onclick="javascript:window.open(this.href,\'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=220,width=600\');return false;"> <i class="fa fa-facebook"></i> </a></li><li class="social-item twitter"> <a href="https://twitter.com/share?url='+p+'" title="twitter" onclick="javascript:window.open(this.href,\'\', \'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=260,width=600\');return false;" class="product_share_twitter twitter"> <i class="fa fa-twitter"></i> </a></li></ul></div></div></div><div class="pixel-box-list"><div class="pixel-box-inside"><div class="pixel-list-content"><div class="entry-header"><h3 class="entry-title"><a href="'+p+'" rel="bookmark">'+c+'</a></h3></div></div><div class="article-meta"><span class="byline"><i class="ion-ios-person-outline"></i><span class="author vcard"><a class="url fn n" href="'+h+'">'+f+'</a></span></span> <span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+'</time></a></span></div><Div class="entry-content"><div>'+e(o.content.$t,25)+'...</div><a class="btn-read" href="'+p+'">Read More</a></div></div></div></div></article></div><div class="pixel-widget-col-2 pixel-list-col">':s+'<article class="pixel-post"><div class="article-image"><div class="post-image"><a href="'+p+'" style="background:black url('+g+')" rel="bookmark"></a></div></div><div class="article-content side-item-text"><div class="entry-header"><div class="entry-header-title"><h3 class="entry-title"><a href="'+p+'" rel="bookmark">'+c+'</a></h3></div></div><div class="article-meta"><span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+"</time></a></span></div></div></article>";break;case"gallery":if(o="",-1!==g.indexOf("img.youtube.com"))y=g.substr(g.indexOf("/vi/")+4,11);else var y="regular";var b=n;0==b&&(s=s+'<div class="pixel-gallery-feature"><div class="pixel-iframe-hidden"><iframe width="100%" height="400" src="https://www.youtube.com/embed/'+y+'" frameborder="0" allowfullscreen></iframe></div><div class="feature-image  '+y+'" data-vidid="'+y+'" style="background:url('+g+')"></div><div class="pixel-absolutize"><div class="pixel-dyn-t"><h3><a href="'+p+'">'+c+'</a></h3></div><div class="article-meta"><span class="byline"><i class="ion-ios-person-outline"></i><span class="author vcard"><a class="url fn n" href="'+h+'">'+f+'</a></span></span> <span class="posted-on"><i class="ion-ios-clock-outline"></i><a href="'+p+'" rel="bookmark"><time class="entry-date published updated" datetime="'+u+'">'+v+'</time></a></span></div></div></div></div><div class="pixel-slider owl-carousel owl-theme">'),s=s+'<div class="pixel-gallery-post slide item dy-dn"><div class="'+t+" "+y+' img_dyn getinfo" data-vidid="'+y+'" data-img="'+g+'" style="background:url('+g+')" data-auth="'+f+'" data-auth-uri="'+h+'" data-time="'+v+'"></div><div class="pixel-slide-title"><h3><a href="'+p+'">'+c+"</a></h3></div></div>",0==b&&(t="playing")}}else s=s+'<div class="pixel-empty"><div class="pixel-no-post"><div class="pixel-entry-no-icon"><img class="pixel-empty" alt="pixel-empty" src="https://4.bp.blogspot.com/-wPwjv7-YYGY/Wc98wlDT8qI/AAAAAAAAAEE/mH8YkPl8qJAH9FMuFKcShQvXXYMmVyrIgCLcBGAs/s1600/notfound.png"></div><div class="pixel-no-title"><h3 class="pixel-postmatch">No posts matching tag "'+a+'".</h3></div></div>';switch(l){case"list":s+='</div><div class="clearfix"></div></div>';break;case"gallery":s+='</div></div><div class="clearfix"></div></div>'}},complete:function(){switch(i.append(s),l){case"gallery":i.find(".pixel-gallery-feature .feature-image").click(function(){var e=$(this).attr("data-vidid");if("regular"!==e){var i='<iframe src="https://www.youtube.com/embed/'+e+'?autoplay=1" allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>',a=$(this).closest(".pixel-gallery-feature");a.find(".pixel-iframe-hidden").html(i),a.find(".pixel-iframe-hidden").fadeIn(0),a.find(".feature-image").fadeOut(0)}}),i.find(".dy-dn.slide.pixel-gallery-post").map(function(){$(this).click(function(){var e=$(this).find(".img_dyn.getinfo").attr("data-vidid");$(".ntpl").addClass("playing").removeClass("ntpl"),$(this).find(".img_dyn.getinfo").removeClass("playing").addClass("ntpl");var i=$(this).find(".img_dyn.getinfo").attr("data-img"),a=$(this).find(".pixel-slide-title").html(),l=$(this).find(".img_dyn.getinfo").attr("data-time"),t=$(this).find(".img_dyn.getinfo").attr("data-auth"),s=$(this).find(".img_dyn.getinfo").attr("data-auth-uri");if("regular"!==e){var r='<iframe src="https://www.youtube.com/embed/'+e+'?autoplay=1" allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>';(n=(d=$(this).closest(".pixel-slider").closest("object.pixel-widget")).find(".pixel-widget.gallery").find(".pixel-gallery-feature")).find(".author.vcard a").attr("href",s),n.find(".author.vcard a").html(t),n.find(".pixel-dyn-t").html(a),n.find("time").html(l),n.find(".pixel-iframe-hidden").html(r),n.find(".pixel-iframe-hidden").fadeIn(0),n.find(".feature-image").fadeOut(0)}else{var d=$(this).closest(".pixel-slider").closest("object.pixel-widget"),n=d.find(".pixel-widget.gallery").find(".pixel-gallery-feature");n.find(".feature-image").attr("style","background:url("+i+");"),n.find(".author.vcard a").attr("href",s),n.find(".author.vcard a").html(t),n.find(".pixel-dyn-t").html(a),n.find("time").html(l),n.find(".pixel-iframe-hidden").html("").fadeOut(0),n.find(".feature-image").fadeIn(0)}})}),i.find(".pixel-slider").owlCarousel({loop:!1,nav:!0,navText:["<i class='ion-ios-arrow-back'></i>","<i class='ion-ios-arrow-forward'></i>"],responsive:{0:{items:1},400:{items:2},500:{items:3},600:{items:4}}})}}}),i.append(s)});
 //]]>
 </script>
 </b:if>
