@@ -1471,7 +1471,7 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
                 <b:if cond='data:blog.url == data:blog.homepageUrl'>
                   <div class='custwid col-md-12'>
                     <div class='widget'>
-                      <h2>Latest News</h2>
+                      <h2>Latest Posts</h2>
                     </div>
                   </div>
                 </b:if>
