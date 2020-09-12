@@ -323,7 +323,7 @@ li.hasSubmenu.isMega > ul{position: absolute;width: 100%;left:0px;right:0px;}
 .pixel-wrapper{margin:0 0 10px}
 .pixel-implied{opacity:1}
 .pixelfeatured .pixel-featured .pixel-secondary{overflow:hidden;display:block;padding:0;position:relative}
-.pixelfeatured .pixel-featured .pixel-secondary:last-child{padding-top:10px;margin-top:10px}
+.pixelfeatured .pixel-featured .pixel-secondary:last-child{}
 .pixl .pixel-featured .pixel-secondary .pixelfeatured-thumb{width:100%;height:240px;vertical-align:middle}
 .pixl .pixel-featured .pixel-secondary .pixel-thumb{width:100%;height:240px;position:relative;display:block}
 .pixel-trap{position:absolute;left:0;top:0;z-index:1;width:100%;height:100%;background-color:rgba(40,35,40,0.05)}
@@ -390,10 +390,10 @@ ol{padding-left: 20px;box-sizing:border-box;width:100%;}
 .grid-item:hover .post-cat{opacity: 0;filter:blur(0px)}
 .pixelfeatured .pixel-hero{width:60%;position:relative;float:left;padding-right:1.4%;box-sizing:border-box;overflow:hidden}
 .pixelfeatured .pixel-featured-image{width:100%;position:relative;overflow:hidden}
-.pixelfeatured .pixel-hero .pixelfeatured-thumb,.pixelfeatured .blsm-img{height:500px}
+.pixelfeatured .pixel-hero .pixelfeatured-thumb,.pixelfeatured .blsm-img{height:240px}
 .pixl .pixel-hero .pixelfeatured-thumb{position:relative;width:100%;height:200px}
 .pixelfeatured-thumb{overflow:hidden}
-.pixelfeatured .pixel-hero .pixelfeatured-thumb,.pixelfeatured .blsm-img{height:500px!important}
+.pixelfeatured .pixel-hero .pixelfeatured-thumb,.pixelfeatured .blsm-img{height:240px !important}
 .pixl .blsm-img{width:100%;height:200px;position:relative;display:block}
 .pixel-hero .pixelfeatured-thumb .pixel-label{position:absolute;top:15px;left:15px;z-index:2}
 .pixel-hero .pixelfeatured-thumb .pixel-label a{background:$maincolor;color:#fff;text-transform:uppercase;height:20px;line-height:20px;display:inline-block;padding:0 6px;font-size:11px;font-weight:400;border-radius:2px}
@@ -848,7 +848,7 @@ form input[type='text']:hover,#pixel-footer .contact-form-widget textarea:hover{
 .ops-404{width:80%!important}
 .title-404{font-size:160px!important}
 .pixelfeatured .pixel-hero{width:100%;float:none;padding-right:0;margin-bottom:10px}
-.pixl .pixel-featured .pixel-secondary .pixelfeatured-thumb,.pixl .pixel-featured .pixel-secondary .pixel-thumb{height:500px}
+.pixl .pixel-featured .pixel-secondary .pixelfeatured-thumb,.pixl .pixel-featured .pixel-secondary .pixel-thumb{height:240px}
 .post-home-image{float:none;width:100%;margin-bottom:20px;position:relative}
 .post-home-image .post-thumb a,.post-home-image .post-thumb,.post-home-image{height:250px}
 #meta-post{text-align:center}
@@ -1414,7 +1414,7 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
         <b:section class='ad-top-widget' id='pixel-advert-2' maxwidgets='1' name='Post Page Advertisement [Top]' preferred='no' showaddelement='no'>
           <b:widget id='HTML991' locked='true' title='Post Page Advertisement [Top]' type='HTML' version='1'>
             <b:widget-settings>
-              <b:widget-setting name='content'></b:widget-setting>
+              <b:widget-setting name='content'/>
             </b:widget-settings>
             <b:includable id='main'>
               <!-- only display title if it's non-empty -->
@@ -1440,24 +1440,24 @@ The purpose was to save a ton of money, but it then grew into a passion and now 
           <b:widget-settings>
             <b:widget-setting name='showDateHeader'>true</b:widget-setting>
             <b:widget-setting name='style.textcolor'>#00c8d7</b:widget-setting>
-            <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+            <b:widget-setting name='showShareButtons'>false</b:widget-setting>
             <b:widget-setting name='authorLabel'>By</b:widget-setting>
             <b:widget-setting name='showCommentLink'>true</b:widget-setting>
             <b:widget-setting name='style.urlcolor'>#00c8d7</b:widget-setting>
-            <b:widget-setting name='showAuthor'>false</b:widget-setting>
+            <b:widget-setting name='showAuthor'>true</b:widget-setting>
             <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
             <b:widget-setting name='style.linkcolor'>#00c8d7</b:widget-setting>
             <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
             <b:widget-setting name='style.bgcolor'>#000000</b:widget-setting>
-            <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+            <b:widget-setting name='showAuthorProfile'>true</b:widget-setting>
             <b:widget-setting name='style.layout'>1x1</b:widget-setting>
             <b:widget-setting name='showLabels'>true</b:widget-setting>
             <b:widget-setting name='showLocation'>true</b:widget-setting>
             <b:widget-setting name='showTimestamp'>true</b:widget-setting>
-            <b:widget-setting name='postsPerAd'>3</b:widget-setting>
-            <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+            <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+            <b:widget-setting name='showBacklinks'>true</b:widget-setting>
             <b:widget-setting name='style.bordercolor'>#000000</b:widget-setting>
-            <b:widget-setting name='showInlineAds'>true</b:widget-setting>
+            <b:widget-setting name='showInlineAds'>false</b:widget-setting>
             <b:widget-setting name='showReactions'>false</b:widget-setting>
           </b:widget-settings>
           <b:includable id='main' var='top'>
@@ -2987,7 +2987,25 @@ $('.pixel-navigation').after(codei);
 </div>
 <div id='sidebar-wrapper'>
 <b:section class='sidebar pixel-widetize' id='sidebar(1)' name='SIDEBAR TOP' preferred='yes'>
-  <b:widget id='Attribution1' locked='false' title='' type='Attribution' version='1'>
+  <b:widget id='HTML1' locked='false' title='' type='HTML'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;a style=&quot;display:block;background-color:#FC5200;color:#fff;padding:5px 10px 5px 30px;font-size:21px;text-align:center; white-space:nowrap;text-decoration:none;background-repeat:no-repeat;background-position:10px center;border-radius:3px;background-image:url(&#39;http://badges.strava.com/logo-strava-echelon.png&#39;)&quot; href=&#39;http://strava.com/athletes/14665873/badge&#39; target=&quot;_clean&quot;&gt;
+  Follow me on Strava!
+&lt;/a&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+  <!-- only display title if it's non-empty -->
+  <b:if cond='data:title != &quot;&quot;'>
+    <h2 class='title'><data:title/></h2>
+  </b:if>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+
+  <b:include name='quickedit'/>
+</b:includable>
+  </b:widget>
+  <b:widget id='Attribution1' locked='false' title='' type='Attribution'>
     <b:widget-settings>
       <b:widget-setting name='copyright'/>
     </b:widget-settings>
@@ -3159,6 +3177,51 @@ head.appendChild(script);
 </div>
 <div style='clear: both;'/>
 <b:section class='sidebar pixel-widetize' id='sidebar(2)' name='SIDEBAR BOTTOM' preferred='yes'>
+  <b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showSnippet'>true</b:widget-setting>
+      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+      <b:widget-setting name='postId'>6097113140773050121</b:widget-setting>
+      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    <!-- Only display title if it's non-empty -->
+    <b:if cond='data:title != &quot;&quot;'>
+      <h2 class='title'>
+        <data:title/>
+      </h2>
+    </b:if>
+    <b:include name='content'/>
+
+    <b:include name='quickedit'/>
+  </b:includable>
+    <b:includable id='content'>
+    <div class='post-summary'>
+      <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
+        <h3>
+          <a expr:href='data:postUrl'>
+            <data:postTitle/>
+          </a>
+        </h3>
+      </b:if>
+      <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
+        <p>
+          <data:postSummary/>
+        </p>
+      </b:if>
+      <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
+        <img class='image' expr:src='data:postFirstImage'/>
+      </b:if>
+    </div>
+
+    <style type='text/css'>
+    .image {
+      width: 100%;
+    }
+    </style>
+  </b:includable>
+  </b:widget>
   <b:widget id='BlogArchive1' locked='false' title='Archive' type='BlogArchive' version='1'>
     <b:widget-settings>
       <b:widget-setting name='showStyle'>MENU</b:widget-setting>
@@ -3252,51 +3315,6 @@ head.appendChild(script);
         </b:if>
       </span>
     </a>
-  </b:includable>
-  </b:widget>
-  <b:widget id='FeaturedPost1' locked='false' title='Featured Post' type='FeaturedPost' version='1'>
-    <b:widget-settings>
-      <b:widget-setting name='showSnippet'>true</b:widget-setting>
-      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
-      <b:widget-setting name='postId'>6097113140773050121</b:widget-setting>
-      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
-      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
-    </b:widget-settings>
-    <b:includable id='main'>
-    <!-- Only display title if it's non-empty -->
-    <b:if cond='data:title != &quot;&quot;'>
-      <h2 class='title'>
-        <data:title/>
-      </h2>
-    </b:if>
-    <b:include name='content'/>
-
-    <b:include name='quickedit'/>
-  </b:includable>
-    <b:includable id='content'>
-    <div class='post-summary'>
-      <b:if cond='data:showPostTitle and data:postTitle != &quot;&quot;'>
-        <h3>
-          <a expr:href='data:postUrl'>
-            <data:postTitle/>
-          </a>
-        </h3>
-      </b:if>
-      <b:if cond='data:showSnippet and data:postSummary != &quot;&quot;'>
-        <p>
-          <data:postSummary/>
-        </p>
-      </b:if>
-      <b:if cond='data:showFirstImage and data:postFirstImage != &quot;&quot;'>
-        <img class='image' expr:src='data:postFirstImage'/>
-      </b:if>
-    </div>
-
-    <style type='text/css'>
-    .image {
-      width: 100%;
-    }
-    </style>
   </b:includable>
   </b:widget>
   <b:widget id='Label1' locked='false' title='Tags' type='Label' version='1'>
@@ -3431,36 +3449,6 @@ head.appendChild(script);
       </div>
     </b:includable>
   </b:widget>
-  <b:widget id='FollowByEmail1' locked='false' title='Newsletter' type='FollowByEmail' version='1'>
-    <b:includable id='main'>
-      <b:if cond='data:title != &quot;&quot;'>
-        <h2 class='title'>
-          <data:title/>
-        </h2>
-      </b:if>
-      <div class='widget-content'>
-        <div class='follow-by-email-inner'>
-          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
-            <table width='100%'>
-              <tr>
-                <td>
-                  <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
-                </td>
-                <td width='64px'>
-                  <input class='follow-by-email-submit' type='submit' value='Submit'/>
-                </td>
-              </tr>
-            </table>
-            <input expr:value='data:feedPath' name='uri' type='hidden'/>
-            <input name='loc' type='hidden' value='en_US'/>
-          </form>
-        </div>
-      </div>
-      <span class='item-control blog-admin'>
-        <!--b:include name='quickedit'/-->
-      </span>
-    </b:includable>
-  </b:widget>
   <b:widget id='Label3' locked='false' title='Labels' type='Label' version='1'>
     <b:widget-settings>
       <b:widget-setting name='sorting'>FREQUENCY</b:widget-setting>
@@ -3523,7 +3511,38 @@ head.appendChild(script);
 </div>
 
 <div id='pixel-footer-cols'>
-<b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(2)' name='Footer Column [2]' preferred='yes'/>
+<b:section class='pixel-fcols-inner pixel-widetize' id='Footer widget(2)' name='Footer Column [2]' preferred='yes'>
+  <b:widget id='FollowByEmail1' locked='false' title='Newsletter' type='FollowByEmail' version='1'>
+    <b:includable id='main'>
+      <b:if cond='data:title != &quot;&quot;'>
+        <h2 class='title'>
+          <data:title/>
+        </h2>
+      </b:if>
+      <div class='widget-content'>
+        <div class='follow-by-email-inner'>
+          <form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+            <table width='100%'>
+              <tr>
+                <td>
+                  <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+                </td>
+                <td width='64px'>
+                  <input class='follow-by-email-submit' type='submit' value='Submit'/>
+                </td>
+              </tr>
+            </table>
+            <input expr:value='data:feedPath' name='uri' type='hidden'/>
+            <input name='loc' type='hidden' value='en_US'/>
+          </form>
+        </div>
+      </div>
+      <span class='item-control blog-admin'>
+        <!--b:include name='quickedit'/-->
+      </span>
+    </b:includable>
+  </b:widget>
+</b:section>
 </div>
 
 <div id='pixel-footer-cols'>
